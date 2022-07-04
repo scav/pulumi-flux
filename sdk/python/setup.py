@@ -15,7 +15,7 @@ class InstallPluginCommand(install):
     def run(self):
         install.run(self)
         try:
-            check_call(['pulumi', 'plugin', 'install', 'resource', 'flux', PLUGIN_VERSION])
+            check_call(['pulumi', 'plugin', 'install', 'resource', 'flux', PLUGIN_VERSION, '--server', 'https://github.com/scav/pulumi-flux/releases/'])
         except OSError as error:
             if error.errno == errno.ENOENT:
                 print(f"""
@@ -39,14 +39,14 @@ def readme():
 
 setup(name='pulumi_flux',
       version=VERSION,
-      description="A Pulumi package for creating and managing flux cloud resources.",
+      description="A Pulumi package for bootstrapping Flux in Kubernetes.",
       long_description=readme(),
       long_description_content_type='text/markdown',
       cmdclass={
           'install': InstallPluginCommand,
       },
-      keywords='pulumi flux category/cloud',
-      url='https://github.com/scav/pulumi-flux',
+      keywords='pulumi flux kubernetes',
+      url='http://fluxcd.io/',
       project_urls={
           'Repository': 'https://github.com/scav/pulumi-flux'
       },

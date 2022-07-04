@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Pulumi</Authors>
-    <Company>Pulumi</Company>
-    <Description>A Pulumi package for creating and managing flux cloud resources.</Description>
+    <Authors>scav</Authors>
+    <Company>scav</Company>
+    <Description>A Pulumi package for bootstrapping Flux in Kubernetes.</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/scav/pulumi-flux</PackageProjectUrl>
+    <PackageProjectUrl>http://fluxcd.io/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/scav/pulumi-flux</RepositoryUrl>
     <PackageIcon>logo.png</PackageIcon>
 

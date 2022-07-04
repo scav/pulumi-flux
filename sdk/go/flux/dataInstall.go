@@ -11,6 +11,7 @@ import (
 )
 
 func DataInstall(ctx *pulumi.Context, args *DataInstallArgs, opts ...pulumi.InvokeOption) (*DataInstallResult, error) {
+	opts = pkgInvokeDefaultOpts(opts)
 	var rv DataInstallResult
 	err := ctx.Invoke("flux:index/dataInstall:DataInstall", args, &rv, opts...)
 	if err != nil {

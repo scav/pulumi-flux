@@ -1,3 +1,3 @@
-// A Pulumi package for creating and managing flux cloud resources.
+// A Pulumi package for bootstrapping Flux in Kubernetes.
 //
 package flux
