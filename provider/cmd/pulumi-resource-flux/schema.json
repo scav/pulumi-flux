@@ -11,7 +11,7 @@
     "license": "Apache-2.0",
     "attribution": "This Pulumi package is based on the [`flux` Terraform Provider](https://github.com/fluxcd/terraform-provider-flux).",
     "repository": "https://github.com/scav/pulumi-flux",
-    "pluginDownloadURL": "https://github.com/scav/pulumi-flux/releases/download/v0.0.1/",
+    "pluginDownloadURL": "https://github.com/scav/pulumi-flux/releases/",
     "publisher": "scav",
     "meta": {
         "moduleFormat": "(.*)(?:/[^/]*)"
@@ -290,7 +290,7 @@
         "go": {
             "generateExtraInputTypes": true,
             "generateResourceContainerTypes": true,
-            "importBasePath": "github.com/pulumi/pulumi-flux/sdk/go/flux"
+            "importBasePath": "github.com/scav/pulumi-flux/sdk/go/flux"
         },
         "nodejs": {
             "compatibility": "tfbridge20",

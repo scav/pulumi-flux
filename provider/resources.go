@@ -69,7 +69,7 @@ func Provider() tfbridge.ProviderInfo {
 		// PluginDownloadURL is an optional URL used to download the Provider
 		// for use in Pulumi programs
 		// e.g https://github.com/org/pulumi-provider-name/releases/
-		PluginDownloadURL: "https://github.com/scav/pulumi-flux/releases/download/v0.0.1/",
+		PluginDownloadURL: "https://github.com/scav/pulumi-flux/releases/",
 		Description:       "A Pulumi package for bootstrapping Flux in Kubernetes.",
 		// category/cloud tag helps with categorizing the package in the Pulumi Registry.
 		// For all available categories, see `Keywords` in
