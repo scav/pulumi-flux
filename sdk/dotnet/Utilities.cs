@@ -53,6 +53,7 @@ namespace Pulumi.Flux
         {
             var dst = src ?? new global::Pulumi.InvokeOptions{};
             dst.Version = src?.Version ?? Version;
+            dst.PluginDownloadURL = src?.PluginDownloadURL ?? "https://github.com/scav/pulumi-flux/releases/download/v0.0.1/";
             return dst;
         }
 

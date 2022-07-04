@@ -11,6 +11,7 @@ import (
 )
 
 func DataSync(ctx *pulumi.Context, args *DataSyncArgs, opts ...pulumi.InvokeOption) (*DataSyncResult, error) {
+	opts = pkgInvokeDefaultOpts(opts)
 	var rv DataSyncResult
 	err := ctx.Invoke("flux:index/dataSync:DataSync", args, &rv, opts...)
 	if err != nil {

@@ -1,4 +1,5 @@
 {
   "resource": true,
-  "name": "flux"
+  "name": "flux",
+  "server": "https://github.com/scav/pulumi-flux/releases/download/v0.0.1/"
 }

@@ -35,6 +35,7 @@ namespace Pulumi.Flux
             var defaultOptions = new CustomResourceOptions
             {
                 Version = Utilities.Version,
+                PluginDownloadURL = "https://github.com/scav/pulumi-flux/releases/download/v0.0.1/",
             };
             var merged = CustomResourceOptions.Merge(defaultOptions, options);
             // Override the ID if one was specified for consistency with other language SDKs.
