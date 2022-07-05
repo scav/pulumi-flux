@@ -1,15 +1,23 @@
 # Pulumi Flux Provider
 
-The Pulumi Flux Provider lets you manage [Flux](http://fluxcd.io/) resources to bootstrap a Flux installation on Kubernetes
+The Pulumi Flux Provider lets you create [Flux](http://fluxcd.io/) manifests used to bootstrap a Flux installation on Kubernetes.
+This provider does not apply them, it only creates the manifests.
 
 ## Installing
 
-This package is currently only distributed for Go through Github.
+Installing plugin, replacing $TAG with the current release
+```bash
+pulumi plugin install resource flux $TAG --server https://github.com/scav/pulumi-flux/releases/download/$TAG/ 
+```
 
 ### Go
 
-To use from Go, use `go get` to grab the latest version of the library:
-
 ```bash
 go get github.com/scav/pulumi-flux/sdk 
+```
+
+### Node
+
+```bash
+npm install @scav/pulumi-flux
 ```

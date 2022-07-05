@@ -8,9 +8,9 @@ replace (
 )
 
 require (
-	github.com/fluxcd/terraform-provider-flux v0.15.1
-	github.com/pulumi/pulumi-terraform-bridge/v3 v3.24.1
-	github.com/pulumi/pulumi/sdk/v3 v3.33.1
+	github.com/fluxcd/terraform-provider-flux v0.15.3
+	github.com/pulumi/pulumi-terraform-bridge/v3 v3.25.2
+	github.com/pulumi/pulumi/sdk/v3 v3.35.2
 )
 
 require (
@@ -40,6 +40,7 @@ require (
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/PuerkitoBio/purell v1.1.1 // indirect
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
+	github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-cidr v1.1.0 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
@@ -65,18 +66,19 @@ require (
 	github.com/dimchansky/utfbom v1.1.1 // indirect
 	github.com/djherbis/times v1.5.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
+	github.com/edsrzf/mmap-go v1.1.0 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
 	github.com/ettle/strcase v0.1.1 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
 	github.com/fatih/color v1.13.0 // indirect
-	github.com/fluxcd/flux2 v0.31.1 // indirect
-	github.com/fluxcd/kustomize-controller/api v0.26.1 // indirect
+	github.com/fluxcd/flux2 v0.31.3 // indirect
+	github.com/fluxcd/kustomize-controller/api v0.26.2 // indirect
 	github.com/fluxcd/pkg/apis/acl v0.0.3 // indirect
 	github.com/fluxcd/pkg/apis/kustomize v0.4.2 // indirect
 	github.com/fluxcd/pkg/apis/meta v0.14.2 // indirect
 	github.com/fluxcd/pkg/kustomize v0.5.2 // indirect
 	github.com/fluxcd/pkg/untar v0.1.0 // indirect
-	github.com/fluxcd/source-controller/api v0.25.5 // indirect
+	github.com/fluxcd/source-controller/api v0.25.9 // indirect
 	github.com/gedex/inflector v0.0.0-20170307190818-16278e9db813 // indirect
 	github.com/go-errors/errors v1.0.1 // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
@@ -114,7 +116,7 @@ require (
 	github.com/hashicorp/go-uuid v1.0.3 // indirect
 	github.com/hashicorp/go-version v1.4.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/hashicorp/hcl/v2 v2.11.1 // indirect
+	github.com/hashicorp/hcl/v2 v2.12.0 // indirect
 	github.com/hashicorp/hil v0.0.0-20190212132231-97b3a9cdfa93 // indirect
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/hashicorp/terraform-plugin-go v0.9.0 // indirect
@@ -155,6 +157,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/monochromegane/go-gitignore v0.0.0-20200626010858-205db1a8cc00 // indirect
+	github.com/natefinch/atomic v1.0.1 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
 	github.com/pgavlin/goldmark v1.1.33-0.20200616210433-b5eb04559386 // indirect
@@ -163,9 +166,9 @@ require (
 	github.com/pkg/term v1.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/posener/complete v1.2.3 // indirect
-	github.com/pulumi/pulumi-java/pkg v0.2.0 // indirect
-	github.com/pulumi/pulumi-yaml v0.3.0 // indirect
-	github.com/pulumi/pulumi/pkg/v3 v3.33.1 // indirect
+	github.com/pulumi/pulumi-java/pkg v0.4.0 // indirect
+	github.com/pulumi/pulumi-yaml v0.5.2 // indirect
+	github.com/pulumi/pulumi/pkg/v3 v3.35.2 // indirect
 	github.com/pulumi/terraform-diff-reader v0.0.0-20201211191010-ad4715e9285e // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rjeczalik/notify v0.9.2 // indirect
@@ -174,6 +177,8 @@ require (
 	github.com/ryanuber/go-glob v1.0.0 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20210923224102-525f6e181f06 // indirect
 	github.com/santhosh-tekuri/jsonschema/v5 v5.0.0 // indirect
+	github.com/segmentio/asm v1.1.3 // indirect
+	github.com/segmentio/encoding v0.3.5 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
@@ -216,7 +221,7 @@ require (
 	google.golang.org/api v0.74.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20220405205423-9d709892a2bf // indirect
-	google.golang.org/grpc v1.45.0 // indirect
+	google.golang.org/grpc v1.47.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/AlecAivazis/survey.v1 v1.8.9-0.20200217094205-6773bdf39b7f // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
@@ -231,6 +236,7 @@ require (
 	k8s.io/klog/v2 v2.60.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220401212409-b28bf2818661 // indirect
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9 // indirect
+	lukechampine.com/frand v1.4.2 // indirect
 	sigs.k8s.io/controller-runtime v0.11.2 // indirect
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
 	sigs.k8s.io/kustomize/api v0.11.5 // indirect

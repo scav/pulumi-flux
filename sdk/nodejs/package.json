@@ -1,5 +1,5 @@
 {
-    "name": "@pulumi/flux",
+    "name": "@scav/pulumi-flux",
     "version": "${VERSION}",
     "description": "A Pulumi package for bootstrapping Flux in Kubernetes.",
     "keywords": [
@@ -24,6 +24,6 @@
     },
     "pulumi": {
         "resource": true,
-        "pluginDownloadURL": "https://github.com/scav/pulumi-flux/releases/"
+        "server": "https://github.com/scav/pulumi-flux/releases/"
     }
 }
