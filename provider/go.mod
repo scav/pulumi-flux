@@ -10,7 +10,7 @@ replace (
 require (
 	github.com/fluxcd/terraform-provider-flux v0.15.3
 	github.com/pulumi/pulumi-terraform-bridge/v3 v3.25.2
-	github.com/pulumi/pulumi/sdk/v3 v3.35.2
+	github.com/pulumi/pulumi/sdk/v3 v3.35.3
 )
 
 require (
