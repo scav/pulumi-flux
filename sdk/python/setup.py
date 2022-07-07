@@ -45,7 +45,7 @@ setup(name='pulumi_flux',
       cmdclass={
           'install': InstallPluginCommand,
       },
-      keywords='pulumi flux kubernetes',
+      keywords='pulumi flux kubernetes infrastructure',
       url='http://fluxcd.io/',
       project_urls={
           'Repository': 'https://github.com/scav/pulumi-flux'

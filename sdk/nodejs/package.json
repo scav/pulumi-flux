@@ -5,7 +5,8 @@
     "keywords": [
         "pulumi",
         "flux",
-        "kubernetes"
+        "kubernetes",
+        "infrastructure"
     ],
     "homepage": "http://fluxcd.io/",
     "repository": "https://github.com/scav/pulumi-flux",

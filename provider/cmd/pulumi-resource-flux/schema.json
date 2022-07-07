@@ -5,7 +5,8 @@
     "keywords": [
         "pulumi",
         "flux",
-        "kubernetes"
+        "kubernetes",
+        "infrastructure"
     ],
     "homepage": "http://fluxcd.io/",
     "license": "Apache-2.0",
