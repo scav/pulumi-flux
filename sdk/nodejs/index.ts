@@ -5,11 +5,20 @@ import * as pulumi from "@pulumi/pulumi";
 import * as utilities from "./utilities";
 
 // Export members:
-export * from "./dataInstall";
-export * from "./dataSync";
-export * from "./provider";
+export { DataInstallArgs, DataInstallResult, DataInstallOutputArgs } from "./dataInstall";
+export const dataInstall: typeof import("./dataInstall").dataInstall = null as any;
+export const dataInstallOutput: typeof import("./dataInstall").dataInstallOutput = null as any;
+utilities.lazyLoad(exports, ["dataInstall","dataInstallOutput"], () => require("./dataInstall"));
 
-import { Provider } from "./provider";
+export { DataSyncArgs, DataSyncResult, DataSyncOutputArgs } from "./dataSync";
+export const dataSync: typeof import("./dataSync").dataSync = null as any;
+export const dataSyncOutput: typeof import("./dataSync").dataSyncOutput = null as any;
+utilities.lazyLoad(exports, ["dataSync","dataSyncOutput"], () => require("./dataSync"));
+
+export { ProviderArgs } from "./provider";
+export type Provider = import("./provider").Provider;
+export const Provider: typeof import("./provider").Provider = null as any;
+utilities.lazyLoad(exports, ["Provider"], () => require("./provider"));
 
 pulumi.runtime.registerResourcePackage("flux", {
     version: utilities.getVersion(),

@@ -12,14 +12,14 @@ namespace Pulumi.Flux
     public static class DataInstall
     {
         public static Task<DataInstallResult> InvokeAsync(DataInstallArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DataInstallResult>("flux:index/dataInstall:DataInstall", args ?? new DataInstallArgs(), options.WithDefaults());
+            => global::Pulumi.Deployment.Instance.InvokeAsync<DataInstallResult>("flux:index/dataInstall:DataInstall", args ?? new DataInstallArgs(), options.WithDefaults());
 
         public static Output<DataInstallResult> Invoke(DataInstallInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DataInstallResult>("flux:index/dataInstall:DataInstall", args ?? new DataInstallInvokeArgs(), options.WithDefaults());
+            => global::Pulumi.Deployment.Instance.Invoke<DataInstallResult>("flux:index/dataInstall:DataInstall", args ?? new DataInstallInvokeArgs(), options.WithDefaults());
     }
 
 
-    public sealed class DataInstallArgs : Pulumi.InvokeArgs
+    public sealed class DataInstallArgs : global::Pulumi.InvokeArgs
     {
         [Input("baseurl")]
         public string? Baseurl { get; set; }
@@ -78,9 +78,10 @@ namespace Pulumi.Flux
         public DataInstallArgs()
         {
         }
+        public static new DataInstallArgs Empty => new DataInstallArgs();
     }
 
-    public sealed class DataInstallInvokeArgs : Pulumi.InvokeArgs
+    public sealed class DataInstallInvokeArgs : global::Pulumi.InvokeArgs
     {
         [Input("baseurl")]
         public Input<string>? Baseurl { get; set; }
@@ -139,6 +140,7 @@ namespace Pulumi.Flux
         public DataInstallInvokeArgs()
         {
         }
+        public static new DataInstallInvokeArgs Empty => new DataInstallInvokeArgs();
     }
 
 

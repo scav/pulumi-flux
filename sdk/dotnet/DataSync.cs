@@ -12,14 +12,14 @@ namespace Pulumi.Flux
     public static class DataSync
     {
         public static Task<DataSyncResult> InvokeAsync(DataSyncArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.InvokeAsync<DataSyncResult>("flux:index/dataSync:DataSync", args ?? new DataSyncArgs(), options.WithDefaults());
+            => global::Pulumi.Deployment.Instance.InvokeAsync<DataSyncResult>("flux:index/dataSync:DataSync", args ?? new DataSyncArgs(), options.WithDefaults());
 
         public static Output<DataSyncResult> Invoke(DataSyncInvokeArgs args, InvokeOptions? options = null)
-            => Pulumi.Deployment.Instance.Invoke<DataSyncResult>("flux:index/dataSync:DataSync", args ?? new DataSyncInvokeArgs(), options.WithDefaults());
+            => global::Pulumi.Deployment.Instance.Invoke<DataSyncResult>("flux:index/dataSync:DataSync", args ?? new DataSyncInvokeArgs(), options.WithDefaults());
     }
 
 
-    public sealed class DataSyncArgs : Pulumi.InvokeArgs
+    public sealed class DataSyncArgs : global::Pulumi.InvokeArgs
     {
         [Input("branch")]
         public string? Branch { get; set; }
@@ -65,9 +65,10 @@ namespace Pulumi.Flux
         public DataSyncArgs()
         {
         }
+        public static new DataSyncArgs Empty => new DataSyncArgs();
     }
 
-    public sealed class DataSyncInvokeArgs : Pulumi.InvokeArgs
+    public sealed class DataSyncInvokeArgs : global::Pulumi.InvokeArgs
     {
         [Input("branch")]
         public Input<string>? Branch { get; set; }
@@ -113,6 +114,7 @@ namespace Pulumi.Flux
         public DataSyncInvokeArgs()
         {
         }
+        public static new DataSyncInvokeArgs Empty => new DataSyncInvokeArgs();
     }
 
 

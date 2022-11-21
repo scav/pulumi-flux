@@ -75,7 +75,7 @@ namespace Pulumi.Flux
         }
     }
 
-    internal sealed class FluxResourceTypeAttribute : Pulumi.ResourceTypeAttribute
+    internal sealed class FluxResourceTypeAttribute : global::Pulumi.ResourceTypeAttribute
     {
         public FluxResourceTypeAttribute(string type) : base(type, Utilities.Version)
         {
